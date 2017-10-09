@@ -1,4 +1,4 @@
-﻿GRANT CONNECT TO [TelephonyUser];
+﻿GRANT CONNECT TO [TwilioUser];
 
 
 GO
