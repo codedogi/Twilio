@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "O2.Telephony.Api", "O2.Tele
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "O2.Telephony.Models", "O2.Telephony.Models\O2.Telephony.Models.csproj", "{39284CC3-F2CA-4C38-9678-2D130418ED9E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "O2.Telephony.Dal", "O2.Telephony.Dal\O2.Telephony.Dal.csproj", "{8C779FE6-DB2F-481D-AFB8-3019E9B3702C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{39284CC3-F2CA-4C38-9678-2D130418ED9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39284CC3-F2CA-4C38-9678-2D130418ED9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39284CC3-F2CA-4C38-9678-2D130418ED9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C779FE6-DB2F-481D-AFB8-3019E9B3702C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C779FE6-DB2F-481D-AFB8-3019E9B3702C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C779FE6-DB2F-481D-AFB8-3019E9B3702C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C779FE6-DB2F-481D-AFB8-3019E9B3702C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

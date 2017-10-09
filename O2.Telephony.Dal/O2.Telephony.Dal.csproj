@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8C779FE6-DB2F-481D-AFB8-3019E9B3702C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>O2.Telephony.Dal</RootNamespace>
+    <AssemblyName>O2.Telephony.Dal</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.4.12\lib\net45\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="NLog.Extended, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.Extended.4.0.0.1\lib\net45-full\NLog.Extended.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Imp\BaseDal.cs" />
+    <Compile Include="Imp\AccountDal.cs" />
+    <Compile Include="Imp\CreditDal.cs" />
+    <Compile Include="Imp\TimeZoneDal.cs" />
+    <Compile Include="Imp\PhoneDal.cs" />
+    <Compile Include="Interfaces\ICreditDal.cs" />
+    <Compile Include="Interfaces\ITimeZoneDal.cs" />
+    <Compile Include="Interfaces\IPhoneDal.cs" />
+    <Compile Include="Interfaces\IAccountDal.cs" />
+    <Compile Include="Models\BasePoco.cs" />
+    <Compile Include="Models\AccountPocoExtension.cs" />
+    <Compile Include="Models\CallLogPoco.cs" />
+    <Compile Include="Models\CallLogPocoExtension.cs" />
+    <Compile Include="Models\CreditTransactionPoco.cs" />
+    <Compile Include="Models\CreditTransactionPocoExtension.cs" />
+    <Compile Include="Models\GeoZipCodePocoExtension.cs" />
+    <Compile Include="Models\GeoZipCodePoco.cs" />
+    <Compile Include="Models\GeoTimeZonePocoExtension.cs" />
+    <Compile Include="Models\GeoTimeZonePoco.cs" />
+    <Compile Include="Models\PetaPoco.cs" />
+    <Compile Include="Models\Poco\CallLogPoco.cs" />
+    <Compile Include="Models\Poco\CreditTransactionPoco.cs" />
+    <Compile Include="Models\Poco\GeoZipCodePoco.cs" />
+    <Compile Include="Models\Poco\GeoTimeZonePoco.cs" />
+    <Compile Include="Models\Poco\OutgoingCallPoco.cs" />
+    <Compile Include="Models\Poco\OutgoingCallerIdPoco.cs" />
+    <Compile Include="Models\AccountPoco.cs" />
+    <Compile Include="Models\Poco\AccountPoco.cs" />
+    <Compile Include="PetaPoco\PetaPoco.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\O2.Telephony.Models\O2.Telephony.Models.csproj">
+      <Project>{39284cc3-f2ca-4c38-9678-2d130418ed9e}</Project>
+      <Name>O2.Telephony.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
