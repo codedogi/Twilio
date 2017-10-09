@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Telephony", "Database\Telephony\Telephony.sqlproj", "{4EA9A9E9-E2B2-4E70-8DC1-FA5B7D0605C9}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Twilio", "Database\Twilio\Twilio.sqlproj", "{2877C421-02BC-456B-A306-260658E751C1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4EA9A9E9-E2B2-4E70-8DC1-FA5B7D0605C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EA9A9E9-E2B2-4E70-8DC1-FA5B7D0605C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EA9A9E9-E2B2-4E70-8DC1-FA5B7D0605C9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4EA9A9E9-E2B2-4E70-8DC1-FA5B7D0605C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EA9A9E9-E2B2-4E70-8DC1-FA5B7D0605C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EA9A9E9-E2B2-4E70-8DC1-FA5B7D0605C9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2877C421-02BC-456B-A306-260658E751C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2877C421-02BC-456B-A306-260658E751C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2877C421-02BC-456B-A306-260658E751C1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2877C421-02BC-456B-A306-260658E751C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2877C421-02BC-456B-A306-260658E751C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2877C421-02BC-456B-A306-260658E751C1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4ADB06B-28C8-4BB2-AD85-AB66171E1C12}
+	EndGlobalSection
+EndGlobal

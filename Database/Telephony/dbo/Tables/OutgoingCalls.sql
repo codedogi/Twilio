@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[OutgoingCalls] (
+    [Id]        UNIQUEIDENTIFIER NOT NULL,
+    [AccountId] UNIQUEIDENTIFIER NOT NULL,
+    [Created]   DATETIME         NOT NULL,
+    CONSTRAINT [PK_OutgoingCalls] PRIMARY KEY CLUSTERED ([Id] ASC) WITH (FILLFACTOR = 90)
+);
+
