@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{39284CC3-F2CA-4C38-9678-2D130418ED9E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>O2.Telephony.Models</RootNamespace>
+    <AssemblyName>O2.Telephony.Models</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.cs" />
+    <Compile Include="AccountResult.cs" />
+    <Compile Include="AccountResultCode.cs" />
+    <Compile Include="AccountResultGeneric.cs" />
+    <Compile Include="AccountStatusCode.cs" />
+    <Compile Include="CallerId\CallerIdSearchResult.cs" />
+    <Compile Include="CallerId\CallerIdStatus.cs" />
+    <Compile Include="CallerId\AddCallerIdResult.cs" />
+    <Compile Include="CallerId\AddCallerIdOptions.cs" />
+    <Compile Include="CallerId\CallerId.cs" />
+    <Compile Include="CallerId\CallerIdResultCode.cs" />
+    <Compile Include="CallerId\CallerIdVerificationStatusResult.cs" />
+    <Compile Include="CallerId\AddCallerIdResultGeneric.cs" />
+    <Compile Include="CallerId\CallerIdVerificationStatusResultGeneric.cs" />
+    <Compile Include="CallerId\CallerIdSearchOptions.cs" />
+    <Compile Include="CallerId\UpdateCallerIdResultGeneric.cs" />
+    <Compile Include="CallerId\RemoveCallerIdResult.cs" />
+    <Compile Include="CallerId\UpdateCallerIdOptions.cs" />
+    <Compile Include="CallerId\UpdateCallerIdResult.cs" />
+    <Compile Include="CallerId\RemoveCallerIdResultGeneric.cs" />
+    <Compile Include="BaseResult.cs" />
+    <Compile Include="CallLog.cs" />
+    <Compile Include="CallStatusType.cs" />
+    <Compile Include="CallRecordType.cs" />
+    <Compile Include="CreditResult.cs" />
+    <Compile Include="CreditResultCode.cs" />
+    <Compile Include="CreditResultGeneric.cs" />
+    <Compile Include="CreditSummary.cs" />
+    <Compile Include="Credits\AdjustmentOptions.cs" />
+    <Compile Include="Credits\DeductOptions.cs" />
+    <Compile Include="CreditTransaction.cs" />
+    <Compile Include="PageOfT.cs" />
+    <Compile Include="AdjustmentType.cs" />
+    <Compile Include="TimeZone\GeoGoogleLocation.cs" />
+    <Compile Include="TimeZone\GeoGoogleGeometry.cs" />
+    <Compile Include="TimeZone\GeoGoogleResult.cs" />
+    <Compile Include="TimeZone\TimeZoneResult.cs" />
+    <Compile Include="TimeZone\LatitudeLongitude.cs" />
+    <Compile Include="TimeZone\GeoZipCode.cs" />
+    <Compile Include="TimeZone\TimeZoneGoogleResult.cs" />
+    <Compile Include="TimeZone\GeoTimeZone.cs" />
+    <Compile Include="ProductTypeCode.cs" />
+    <Compile Include="CallSessionType.cs" />
+    <Compile Include="OutboundCall\OutboundCallStatusOptions.cs" />
+    <Compile Include="PauseCallOptions.cs" />
+    <Compile Include="TelephonyResult.cs" />
+    <Compile Include="OutboundCall\OutboundCall.cs" />
+    <Compile Include="OutboundCall\OutboundCallResult.cs" />
+    <Compile Include="OutboundCall\OutboundCallOptions.cs" />
+    <Compile Include="TelephonyResultCode.cs" />
+    <Compile Include="TelephonyResultGeneric.cs" />
+    <Compile Include="PhoneNumberAvailable.cs" />
+    <Compile Include="PhoneNumberAvailableResult.cs" />
+    <Compile Include="PhoneNumberAvailableResultCode.cs" />
+    <Compile Include="PhoneNumberAvailableResultGeneric.cs" />
+    <Compile Include="PhoneNumberAvailableFilterTollFree.cs" />
+    <Compile Include="PhoneNumberAvailableFilterLocal.cs" />
+    <Compile Include="PhoneNumberOption.cs" />
+    <Compile Include="PhoneNumberResult.cs" />
+    <Compile Include="PhoneNumberResultCode.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TransactionType.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
