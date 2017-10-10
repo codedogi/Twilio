@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using O2.Telephony.Api.Configuration;
@@ -42,9 +43,9 @@ namespace O2.Telephony.Api.Rest
 			}
 		}
 
-		#endregion
+        #endregion
 
-		///// <summary>
+        ///// <summary>
         ///// Execute a manual REST request
         ///// 
         ///// </summary>
@@ -62,6 +63,5 @@ namespace O2.Telephony.Api.Rest
         //    request.DateFormat = "ddd, dd MMM yyyy HH:mm:ss '+0000'";
         //    return this._client.Execute<T>((IRestRequest)request).Data;
         //}
-
     }
 }
